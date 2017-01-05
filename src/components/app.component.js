@@ -17,7 +17,7 @@ export default {
             <a class="btn btn-primary" @click="showNovoJogo">Novo jogo</a>
             <a class="btn btn-primary" @click="showZona">Ver zona</a>
             <br/><br/>
-            <div v-if="view == 'tabela'">
+            <div v-show="view == 'tabela'">
                 <time-list></time-list>
             </div>
             <div v-if="view == 'novojogo'">
